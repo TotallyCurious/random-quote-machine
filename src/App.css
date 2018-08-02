@@ -1,28 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Roboto');
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.container {
+  background-color: #333;
+  color: #efe;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.card {
+  font-family: 'Roboto', sans-serif;
+  background-color: #28ab78;
+  text-align: center;
+  padding: 30px;
+  width: 400px;
+  height: 700px;
+  border-radius: 3px;
+  box-shadow: #111 0px 10px 30px -2px, #111 0px 10px 20px -10px;
+}
+
+.header {
+  border-radius: 3px;
+  background-color: rgb(0, 101, 71);
+  color: #efe;
+  padding: 5px 0px;
+  margin: -30px;
+  /* font-size: 2em; */
+}
+
+.quote-box {
+  margin-top: 40px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-text {
+  font-size: 2em;
+}
+
+.quote-author {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.buttons {
+  position: relative;
+  top: 30px;
+}
+
+.btn {
+  outline: 0;
   color: white;
+  background-color: rgb(0, 101, 71);
+  border: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 1.2em;
 }
 
-.App-title {
-  font-size: 1.5em;
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.App-intro {
-  font-size: large;
+.btn:active {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.btn-new-quote {
+  background-color: rgb(21, 133, 92);
+  padding: 20px 40px;
+}
+
+.btn-twitter {}
+
+.btn-tumblr {
+  padding: 20px 25px;
+}
+#footer{
+  position: relative;
+  top:25px;
+}
+a{
+  text-decoration: none;
+}
+@media screen and (max-width:1500px) {
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+  .App{
+    text-align: center;
+  }
+  .container{
+    /* width:100vw;
+    height:100vh; */
+  }
+  .card{
+    height: 90vh;
+    width:100%;
+    font-size: 0.9em;
+  }
+  .header{
+    width: 100%;
+    position: fixed;
+    top:0px;left:0px;
+    text-align: center;
+    padding: 1px 0px;
+    margin: 0;
+  }
+  .quote-box{
+    position: fixed;
+    top:10%;left:0;
+    margin: 10px 0px 0px 0px;
+    padding: 2px 0px;
+    width: 100%;
+    height:70%;
+
+  }
+  .quote-text{
+    padding: 0px 10px;
+    font-size:1.5em;
+  }
+  .buttons{
+    width:100%;
+    position: fixed;
+    top:83%;left:0;
+  }
+  .btn{
+    padding: 10px;
+  }
+  .btn-tumblr{
+    padding: 10px 15px;
+  }
+  #footer{
+    position: fixed;
+    top:93%;left:35vw;
+  }
 }
